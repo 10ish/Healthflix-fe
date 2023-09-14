@@ -1,0 +1,19 @@
+.youtube{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,47,68,1) 57%, rgba(107,47,108,1) 100%);
+ height:50vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 5px 5px 5px grey;
+}
+.mid-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.mid-video{
+    border-radius: 10px;
+}

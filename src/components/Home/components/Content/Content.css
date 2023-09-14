@@ -1,0 +1,26 @@
+.content-container{
+    font-family: 'Montserrat', 'sans-serif';
+    width:100%;
+    text-align: center;
+
+}
+.section-1{
+    display: flex;
+    background-color: #352F44;
+    width:100%;
+    color:#FAF0E6;
+    padding: 5%;
+    margin-top:5%;
+    border-radius: 2%;
+    text-align: center;
+}
+.section-2{
+    padding:5%;
+    text-align: left;
+    
+}
+
+.section-image{
+    height: 18rem;
+    width: 18rem;
+}

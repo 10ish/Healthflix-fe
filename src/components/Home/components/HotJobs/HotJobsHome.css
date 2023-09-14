@@ -1,0 +1,26 @@
+.hot-jobs-section {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 47, 68, 1) 57%,
+    rgba(107, 47, 108, 1) 100%
+  );
+  padding-top: 0.5%;
+  box-shadow: 3px 3px 3px grey;
+}
+.hot-jobs-title {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 4%;
+  margin-left: 9%;
+  margin-bottom: 2%;
+  color: #101010;
+  color: #faf0e6;
+}
+.card-row {
+  border-radius: 7px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 5%;
+  padding: 3% 2%;
+}
+

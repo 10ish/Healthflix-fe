@@ -1,0 +1,16 @@
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,47,68,1) 57%, rgba(107,47,108,1) 100%);
+    padding: 4%;
+    text-decoration: none;
+    margin: 5% 0;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.6);
+}
+.link{
+    color: #fff;
+}
+.link:hover{
+    color:#FAF0E6;
+}

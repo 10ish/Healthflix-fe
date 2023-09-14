@@ -1,0 +1,32 @@
+
+.section{
+    padding: 4%;
+    letter-spacing: 0.1em;
+}
+.resources-icon-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.resources-icon-grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.resources-icon{
+    background-color: #352f44;;
+    color: rgb(245, 237, 224);
+    border-radius: 1em;
+    text-align: center;
+    padding: 10%;
+    box-shadow: 7px 7px 5px grey;
+    
+}
+.resources-icon > a{
+    text-decoration: none;
+    color:  rgb(245, 237, 224);
+    margin-top: 10px;
+
+}
+.resources-icon > a > h6{
+    margin-top: 10%;
+}
+

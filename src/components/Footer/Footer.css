@@ -1,0 +1,12 @@
+.footer{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,47,68,1) 57%, rgba(107,47,108,1) 100%);
+    margin-bottom: 2px;
+    clear: both;
+}
+.footer-end{
+    display: flex;
+    justify-content: space-around;
+    background-color: #352F44;
+    align-items: center;
+}

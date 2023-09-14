@@ -1,0 +1,45 @@
+.pagination{
+    min-width: 100%;
+    justify-content: center;
+    margin: 2% 0;
+    
+}
+.content-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+}
+.filters-section{
+    width: 25%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+    text-align: center;
+}
+.filter-item{
+    padding: 2%;
+   min-height: 5%;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    border-radius: 1em;
+    
+    
+}
+
+.jobs-section{
+    width: 70%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,47,68,1) 57%, rgba(107,47,108,1) 100%);
+    color: aliceblue;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    border-radius: 1em;
+}
+.jobs-section-grid{
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.carousel-img{
+  height: 60vh;
+}
+
+.carousel-caption > h1, h3{
+font-family: 'Righteous', cursive;
+
+   
+}
+
+.carousel-caption > h1{
+    font-size: 70px;
+    text-shadow: 2px 2px 2px rgb(232, 228, 224);
+}

@@ -1,0 +1,18 @@
+.testimonials{
+    padding: 2% 5%;
+    width:100%;
+    text-align: center;
+}
+
+
+.testimonial-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1;
+
+}
+.icon{
+    color:#352F44;
+    margin: 5% 5%;
+
+}

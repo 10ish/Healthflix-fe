@@ -1,0 +1,17 @@
+.about-us-sections{
+    padding: 3%;
+    letter-spacing: 0.1em;
+}
+.about-us-sections-img{
+    width: 100%; height: 100%;
+}
+.about-card{
+    border: 1px grey;
+    box-shadow: 3px 3px 3px gray;
+    background-color: #352f44;
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 1em;
+
+
+}
