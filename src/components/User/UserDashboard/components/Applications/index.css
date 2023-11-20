@@ -1,0 +1,24 @@
+.applications-section{
+
+  padding: 7%;
+  border-radius: 1em;
+  border: 1px solid;
+
+}
+.applications-error-page{
+    padding: 15%;
+    text-align: center;
+    color: rgb(41, 2, 78);
+}
+.error-button-row{
+    margin-top: 10%;
+}
+
+.error-icon{
+margin-bottom: 5%;
+  font-size: 50px;
+  color: brown;
+}
+.user-applications-page{
+  padding: 7%;
+}

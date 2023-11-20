@@ -1,0 +1,31 @@
+.user-home-section {
+  border-radius: 1em;
+  border: 1px solid black;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 5%;
+}
+.user-home-section-row {
+  border-radius: 1em;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.table-head {
+  background-color: black;
+  color: aliceblue;
+  padding: 1%;
+  margin-right: 3px;
+  border-radius: 0.5em;
+  box-shadow: 3px 3px 3px gray;
+  margin-bottom: 5%;
+}
+.table-item-row{
+    box-shadow: 3px 3px 3px  rgb(43, 36, 43);
+      padding: 2%;
+      border-radius: 1em;
+      margin-bottom: 3%;
+    }
+.user-home-buttons {
+  padding: 5%;
+}

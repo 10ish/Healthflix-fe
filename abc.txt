@@ -1,0 +1,10 @@
+documents upload 
+cover letter + cv
+application details page for user
+suggested jobs populate
+edit/update job alert profile
+admin home
+shortlisted jobs page
+jobs page filters
+home page search bar
+adding icons in ui

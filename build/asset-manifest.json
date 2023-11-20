@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Healthflix--fe/static/css/main.72e6892e.css",
+    "main.js": "/Healthflix--fe/static/js/main.6a31c193.js",
+    "static/js/787.03403190.chunk.js": "/Healthflix--fe/static/js/787.03403190.chunk.js",
+    "static/media/abc.pdf": "/Healthflix--fe/static/media/abc.10cf4250348005eb2dc5.pdf",
+    "index.html": "/Healthflix--fe/index.html",
+    "main.72e6892e.css.map": "/Healthflix--fe/static/css/main.72e6892e.css.map",
+    "main.6a31c193.js.map": "/Healthflix--fe/static/js/main.6a31c193.js.map",
+    "787.03403190.chunk.js.map": "/Healthflix--fe/static/js/787.03403190.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72e6892e.css",
+    "static/js/main.6a31c193.js"
+  ]
+}

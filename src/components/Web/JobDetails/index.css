@@ -1,0 +1,30 @@
+.job-details-card{
+    padding: 5%;
+
+}
+.job-details-card-row{
+    
+    padding: 3%;
+    box-shadow: 5px 4px 4px 3px rgb(116, 116, 116);
+    font-size: large;
+    border-radius: 0.5em;
+    color: rgb(75, 4, 78);;
+}
+.job-details-card-row h6{
+    color: #411E8F;
+}
+.job-details-card-row p{
+    color: #3f7873
+}
+.job-details-card-btn-row{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,47,68,1) 57%, rgba(107,47,108,1) 100%);
+    border: 1px solid white;
+}
+.modal-body-head{
+    background-color: #008170;
+    padding: 2%;
+    color: aliceblue;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px gray;
+}

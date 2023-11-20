@@ -1,0 +1,22 @@
+.user-job-alert-settings{
+    padding: 8%;
+
+}
+.user-job-alert-settings-form, .user-job-alert-profiles{
+padding: 5%;
+border: 1px solid;
+border-radius: 1em;
+margin-top: 5%;
+margin-bottom: 5%;
+
+}
+.user-job-alert-settings-form{
+    box-shadow: 10px 10px 10px gray;
+}
+.job-profile-select-input{
+    padding: 1%;
+    margin-left: 10%;
+    border-radius: 1em;
+    width: 50%;
+    margin-bottom: 4%;
+}

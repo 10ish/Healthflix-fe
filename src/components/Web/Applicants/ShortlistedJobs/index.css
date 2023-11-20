@@ -1,0 +1,13 @@
+
+.shortlisted-jobs-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,47,68,1) 57%, rgba(107,47,108,1) 100%);
+    margin:1%;
+    border-radius: 1em;
+}
+.shortlisted-job-card{
+    margin: 5%;
+}

@@ -1,0 +1,41 @@
+.applicant-list-item{
+
+
+    border: 1px solid ;
+    border-radius: 5%;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 1%;
+    word-wrap:break-word;
+   
+    
+    
+}
+.applicant-list-item-content{
+    margin-left: 2%;
+    padding: 5%;
+}
+.applicant-list-item-content-head{
+    color:#4491ab;
+  font-size: medium;
+    
+}
+.applicant-list-item-email-link{
+    color: cadetblue;
+    
+}
+.searchbar-admin{
+
+    border: 2px solid purple;
+    border-radius: 4%;
+    height: 10vh;
+    
+}
+
+@media screen and (max-width:600px) {
+    .applicant-list-item{
+        width: fit-content;
+    }
+   
+}

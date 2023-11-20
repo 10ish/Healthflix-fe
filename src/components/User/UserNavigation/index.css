@@ -1,0 +1,17 @@
+.user-navigation{
+ 
+   display: flex;
+margin: auto;
+
+}
+.user-nav-link-container{
+border: 1px solid rgb(240, 240, 240);
+   background-color:#343A40;
+   height:90%;
+   color: #E1E8EB!important;
+   width: 98%;
+  
+   
+   box-shadow: 5px 5px 5px gray;
+   
+}

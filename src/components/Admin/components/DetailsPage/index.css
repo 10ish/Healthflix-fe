@@ -1,0 +1,41 @@
+.details-card{
+    padding: 5%;
+    letter-spacing: 0.2em;
+    line-height: 2.5em;
+    box-shadow: 5px 7px 7px gray;
+    border: 2px solid #52014a;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+
+
+}
+.details-card-item{
+    box-shadow: 5px 5px 5px gray;
+    padding: 2%;
+    border-radius: 1em;
+    margin-bottom: 3%;
+}
+.details-card-label{
+    font-size: large;
+   text-shadow: 1px 1px  gray;
+  
+}
+.details-card-label::after{
+    content:' :'
+}
+.details-card-value{
+    color: rgb(20, 156, 111);
+}
+.email-btn-link{
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+  
+}
+.email-btn-link:hover{
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+    cursor: pointer;
+}

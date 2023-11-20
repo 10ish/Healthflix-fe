@@ -1,0 +1,19 @@
+.user-documents-page{
+    padding: 10%;
+  
+}
+
+.user-documents,.add-documents{
+border: 1px solid gray;
+border-radius: 1em;
+padding: 5%;
+margin-bottom: 5%;
+
+}
+
+.user-documents h4, .add-documents h4{
+    margin-bottom: 3%;
+}
+.add-documents{
+    padding: 5%;
+}

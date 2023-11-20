@@ -1,12 +1,13 @@
-import './index.css'
-import AdminNavigation from './components/Navigation'
 
 
 export default function AdminHome(){
 
     return(
-        <div>
-        <AdminNavigation/>
+        <div style={{padding:'20%'}}>
+
+        <h1>Admin Home</h1>
+    
+
         </div>
     )
 }

@@ -1,0 +1,16 @@
+.question-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    word-wrap: break-word;
+
+}
+.question{
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 1em;
+    margin: 2%;
+    padding: 3%;
+   
+}
+.a{
+    word-wrap: break-word;
+}

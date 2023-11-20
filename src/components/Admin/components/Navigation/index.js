@@ -1,85 +1,75 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom";
-
-
+import { Outlet } from "react-router-dom";
+import { NavDropdown } from "react-bootstrap";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../../../Context/AuthContext/AuthContext";
 function AdminNavigation() {
+  const {setAdminIsLoggedIn} = useContext(AuthContext)
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    axios
+      .get("http://localhost:8000/admin/logout")
+      .then((res) => {
+        if(res.status===200){
+          setAdminIsLoggedIn(false)
+          navigate("/admin");
+        }
+       
+         
+      
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
-    <Navbar
-      expand="lg"
-      bg="dark"
-      className="bg-body-tertiary nav"
-      variant="dark"
-    >
-      <Container>
-        <Link to="/">
-          <Navbar.Brand href="#home">
+    <div>
+      <Navbar
+        expand="lg"
+        bg="dark"
+        className="bg-body-tertiary site-nav"
+        variant="dark"
+      >
+        <Container>
+          <Navbar.Brand href="/admin/home">
             Healthflix
             <br />
             MEDICAL | US
-            <span>Admin</span>
+            <br />
+            <span style={{ fontSize: "60%" }}> Admin</span>
           </Navbar.Brand>
-        </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <NavDropdown title="Applicants" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#">
 
-                <Link to="/applicants/login">Login </Link>{" "}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#">
-                <Link to="/applicants/register">Register</Link>
-                {""}
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                <Link to="applicants/benifits-and-perks">
-                  Benifits and Perks
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
-                <Link to="applicants/jobs">Jobs</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#123">
-                <Link to={"applicants/jobs"}>Hot Jobs</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#123">
-                <Link to="applicants/workforce-solutions">
-                  Workforce Solutions
-                </Link>
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Staffing Solutions" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#">
-                <Link to="staffingSolutions/submit">
-                  Submit a staffing request
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#a">
-                <Link to="staffingSolutions/about-us">About Us</Link>
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Be a part of voice of nursing
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Link to="/referral-program">
-              <Nav.Link href="#home">Jobs</Nav.Link>
-            </Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/admin/applicants">Applicants</Nav.Link>
+              <Nav.Link href="/admin/applications">Job Applications</Nav.Link>
 
-            <Nav.Link href="https://github.com" target="__blank">
-              International
-            </Nav.Link>
+              <Nav.Link href="/admin/jobs">Jobs</Nav.Link>
 
-            <Link to="/contact">
-              <Nav.Link href="#contact">Applications</Nav.Link>
-            </Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+              <Nav.Link href="/admin/staffingRequests">Staffing Requests</Nav.Link>
+
+              <NavDropdown title="Settings" id="basic-nav-dropdown">
+                <NavDropdown.Item onClick={handleLogout}>
+                  Logout
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/applicants/register">
+                  Add new admin
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/applicants/register">
+                  Account Settings
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <Outlet />
+    </div>
   );
 }
 
