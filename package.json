@@ -2,7 +2,6 @@
   "name": "frontend-greenstaff",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://10ish.github.io/Healthflix--fe",
   "dependencies": {
     "@mui/icons-material": "^5.14.3",
     "@testing-library/jest-dom": "^5.17.0",
