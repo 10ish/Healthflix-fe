@@ -81,7 +81,7 @@ export default function Jobs({type}) {
       </div>
       <div className="content-section">
         <div className="filters-section">
-          <h2>Filters</h2>
+          <h5>Filters</h5>
 
           <Form.Control
             type="text"

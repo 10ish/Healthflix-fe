@@ -11,3 +11,11 @@
 .benifit > svg{
     margin-bottom: 10%;
 }
+
+
+@media (max-width:768px){
+    .benifits-list{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

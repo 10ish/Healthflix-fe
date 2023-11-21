@@ -1,5 +1,6 @@
 .pagination{
-    min-width: 100%;
+    min-width: 70%;
+    
     justify-content: center;
     margin: 2% 0;
     
@@ -11,7 +12,7 @@
     padding: 5%;
 }
 .filters-section{
-    width: 25%;
+    width: 20vw;
     margin-right: 5%;
     padding-left: 5%;
     padding-top: 2%;
@@ -20,6 +21,7 @@
 .filter-item{
     padding: 2%;
    min-height: 5%;
+   max-height: 10%;
     width: 100%;
     margin-top: 5%;
     margin-bottom: 7%;
@@ -29,7 +31,7 @@
 }
 
 .jobs-section{
-    width: 70%;
+    width: 70vw;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(53,47,68,1) 57%, rgba(107,47,108,1) 100%);
     color: aliceblue;
@@ -42,4 +44,13 @@
     margin-top: 1%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width:768px){
+    
+    .jobs-section-grid{
+        display: grid;
+        grid-template-columns: 0.5fr;
+    }
+   
 }
