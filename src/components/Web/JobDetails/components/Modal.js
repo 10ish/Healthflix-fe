@@ -36,7 +36,7 @@ function ApplyJobModal({ show, handleClose, data, jobId }) {
       questionDetails
     };
     axios
-      .post("http://localhost:8000/applications/submit", postData)
+      .post("https://healthflix-be.vercel.app/applications/submit", postData)
       .then((res) => {
         console.log(res);
         handleClose();

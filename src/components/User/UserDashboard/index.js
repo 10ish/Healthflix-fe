@@ -11,7 +11,7 @@ export default function UserHome() {
   axios.defaults.withCredentials = true;
   useEffect(() => {
     axios
-      .get("http://localhost:8000/applicants/user")
+      .get("https://healthflix-be.vercel.app/applicants/user")
       .then((res) => {
         setData(data && res.data);
       })
@@ -19,7 +19,7 @@ export default function UserHome() {
         console.log(err);
       });
     axios
-      .get("http://localhost:8000/applicants/getApplications")
+      .get("https://healthflix-be.vercel.app/applicants/getApplications")
       .then((res) => {
         setUserApplications(res.data);
       })

@@ -39,7 +39,7 @@ export default function Jobs({type}) {
   useEffect(() => {
     async function fetchJobs() {
       try {
-        await axios.get("http://localhost:8000/jobs")
+        await axios.get("https://healthflix-be.vercel.app/jobs")
           .then((res) => {
             setJobsData(res.data);
           });

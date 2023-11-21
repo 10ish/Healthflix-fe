@@ -12,7 +12,7 @@ function AdminNavigation() {
   const navigate = useNavigate();
   const handleLogout = () => {
     axios
-      .get("http://localhost:8000/admin/logout")
+      .get("https://healthflix-be.vercel.app/admin/logout")
       .then((res) => {
         if(res.status===200){
           setAdminIsLoggedIn(false)

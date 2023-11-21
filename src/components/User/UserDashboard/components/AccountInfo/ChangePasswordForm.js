@@ -24,7 +24,7 @@ export default function ChangePasswordForm() {
       confirmNewPassword,
     };
     axios
-      .post("http://localhost:8000/applicants/changePassword", body)
+      .post("https://healthflix-be.vercel.app/applicants/changePassword", body)
       .then((res) => {
         setMessage({
           type: "success",

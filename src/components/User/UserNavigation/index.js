@@ -26,7 +26,7 @@ function UserNavigation() {
 
   const handleLogout = () => {
     axios
-      .get("http://localhost:8000/applicants/logout")
+      .get("https://healthflix-be.vercel.app/applicants/logout")
       .then((res) => {console.log(res)
         setUserIsLoggedIn(false)
         localStorage.setItem("userNavItemKey", 'home');

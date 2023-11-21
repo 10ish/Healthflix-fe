@@ -36,7 +36,7 @@ export default function JobFormModal({ formType, data, show, handleClose }) {
     e.preventDefault();
     if (formType === "Add") {
       axios
-        .post("http://localhost:8000/jobs/add", body)
+        .post("https://healthflix-be.vercel.app/jobs/add", body)
         .then((res) => {
           console.log(res);
           handleClose();
@@ -48,7 +48,7 @@ export default function JobFormModal({ formType, data, show, handleClose }) {
         });
     } else {
       if (data && data._id) {
-        const url = `http://localhost:8000/jobs/update/${data._id}`;
+        const url = `https://healthflix-be.vercel.app/jobs/update/${data._id}`;
         axios.patch(url, body)
           .then((res) => {
             console.log(res);

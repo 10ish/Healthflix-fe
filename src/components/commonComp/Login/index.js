@@ -17,9 +17,9 @@ export default function Login({ type }) {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let loginUrl = "http://localhost:8000/applicants/login";
+    let loginUrl = "https://healthflix-be.vercel.app/applicants/login";
     if (type === "admin") {
-      loginUrl = "http://localhost:8000/admin/login";
+      loginUrl = "https://healthflix-be.vercel.app/admin/login";
     }
 
     try {

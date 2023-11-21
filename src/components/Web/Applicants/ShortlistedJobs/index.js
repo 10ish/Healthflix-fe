@@ -10,7 +10,7 @@ export default function ShortlistedJobs() {
   
   useEffect(() => {
     axios
-      .get("http://localhost:8000/jobs")
+      .get("https://healthflix-be.vercel.app/jobs")
       .then((res) => {
         const filteredJobs = res.data.filter((job) =>
         shortlistedJobIds.includes(job._id)

@@ -10,7 +10,7 @@ export default function UserApplications() {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("http://localhost:8000/applicants/getApplications")
+      .get("https://healthflix-be.vercel.app/applicants/getApplications")
       .then((res) => {
         console.log(res.data);
         setApplications(res.data);

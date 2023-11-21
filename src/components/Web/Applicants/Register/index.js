@@ -33,7 +33,7 @@ export default function Register() {
   formData.append("resume", resume);
 console.log(formData)
     axios
-      .post("http://localhost:8000/applicants/register", formData,{
+      .post("https://healthflix-be.vercel.app/applicants/register", formData,{
         headers: {
           'Content-Type': 'multipart/form-data'
         }

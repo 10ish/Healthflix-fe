@@ -29,7 +29,7 @@ export default function SubmitStaffingReq() {
   const handleSubmit = async (e)=>{
     e.preventDefault();
     axios
-    .post("http://localhost:8000/staffingRequests/submit", formData)
+    .post("https://healthflix-be.vercel.app/staffingRequests/submit", formData)
     .then((res) => {
       console.log(res);
       navigate('/staffingSolutions/submit/success')

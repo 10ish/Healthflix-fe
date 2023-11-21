@@ -36,7 +36,7 @@ export default function JobDetails() {
   useEffect(() => {}, [id]);
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/jobs/${id}`)
+      .get(`https://healthflix-be.vercel.app/jobs/${id}`)
       .then((res) => {
         console.log(res);
         setData(res.data);

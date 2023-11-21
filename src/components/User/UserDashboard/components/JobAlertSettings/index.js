@@ -16,7 +16,7 @@ export default function UserJobAlertSettings() {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:8000/applicants/getJobAlertData")
+      .get("https://healthflix-be.vercel.app/applicants/getJobAlertData")
       .then((res) => {
         console.log(res.data);
         setJobAlertData(res.data);
@@ -33,7 +33,7 @@ export default function UserJobAlertSettings() {
       notificationEnabled: notificationEnabled && notificationEnabled,
     };
     axios
-      .post("http://localhost:8000/applicants/setNotificationsEnabled", body)
+      .post("https://healthflix-be.vercel.app/applicants/setNotificationsEnabled", body)
       .then((res) => {
         console.log(res);
         if (res.status === 200) {
@@ -54,7 +54,7 @@ export default function UserJobAlertSettings() {
       location,
     };
     axios
-      .post("http://localhost:8000/applicants/addJobAlertProfile", { postData })
+      .post("https://healthflix-be.vercel.app/applicants/addJobAlertProfile", { postData })
       .then((res) => {
         if (res.status === 200) {
           window.location.reload(-1);

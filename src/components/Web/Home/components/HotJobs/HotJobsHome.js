@@ -9,7 +9,7 @@ export default function HotJobsHome() {
   const [hotJobsInfo, setHotJobsInfo] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/").then((res) => {
+    axios.get("https://healthflix-be.vercel.app/").then((res) => {
       setHotJobsInfo(res.data);
       console.log(res);
     });

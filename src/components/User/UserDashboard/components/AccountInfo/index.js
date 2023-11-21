@@ -19,7 +19,7 @@ export default function UpdateUserDetails() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/applicants/user")
+      .get("https://healthflix-be.vercel.app/applicants/user")
       .then((res) => {
         setData(res.data);
         setFullName(res.data.fullName || "");
@@ -52,7 +52,7 @@ export default function UpdateUserDetails() {
   
 
     axios
-      .post("http://localhost:8000/applicants/register", formData)
+      .post("https://healthflix-be.vercel.app/applicants/register", formData)
       .then((res) => {
         console.log(res);
         navigate("/registerSuccess");

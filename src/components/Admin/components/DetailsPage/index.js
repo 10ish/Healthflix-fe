@@ -127,7 +127,7 @@ export default function ViewDetailsPage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/${pageType}s/${itemId}`)
+      .get(`https://healthflix-be.vercel.app/${pageType}s/${itemId}`)
       .then((res) => {
         console.log(res.data);
         setData(res.data);
@@ -138,7 +138,7 @@ export default function ViewDetailsPage() {
   }, [pageType, itemId]);
   const handleDelete = () => {
     axios
-      .delete(`http://localhost:8000/${pageType}s/delete`, {
+      .delete(`https://healthflix-be.vercel.app/${pageType}s/delete`, {
         data: { id: itemId },
       })
       .then((res) => {

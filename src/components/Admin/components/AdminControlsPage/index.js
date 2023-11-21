@@ -29,27 +29,27 @@ export default function AdminControlsPage({ type }) {
   };
 
   if (type === "applicant") {
-    links.fetchLink = "http://localhost:8000/applicants";
-    links.deleteLink = "http://localhost:8000/applicants/delete";
+    links.fetchLink = "https://healthflix-be.vercel.app/applicants";
+    links.deleteLink = "https://healthflix-be.vercel.app/applicants/delete";
     pageData.heading = "Applicants Admin";
     pageData.subHeading =
       "Here is a list of all the applicants that have registered so far";
   } else if (type === "job") {
-    links.fetchLink = "http://localhost:8000/jobs";
-    links.deleteLink = "http://localhost:8000/jobs/delete";
-    links.updateLink = "http://localhost:8000/jobs/update";
+    links.fetchLink = "https://healthflix-be.vercel.app/jobs";
+    links.deleteLink = "https://healthflix-be.vercel.app/jobs/delete";
+    links.updateLink = "https://healthflix-be.vercel.app/jobs/update";
     pageData.heading = "Jobs Admin";
     pageData.subHeading =
       "Here is a list of all the jobs you have added so far";
   } else if (type === "application") {
-    links.fetchLink = "http://localhost:8000/applications";
-    links.deleteLink = "http://localhost:8000/applications/delete";
+    links.fetchLink = "https://healthflix-be.vercel.app/applications";
+    links.deleteLink = "https://healthflix-be.vercel.app/applications/delete";
     pageData.heading = "Applications Admin";
     pageData.subHeading =
       "Here is a list of all the applications you  have registered so far";
   } else {
-    links.fetchLink = "http://localhost:8000/staffingRequests";
-    links.deleteLink = "http://localhost:8000/staffingRequests/delete";
+    links.fetchLink = "https://healthflix-be.vercel.app/staffingRequests";
+    links.deleteLink = "https://healthflix-be.vercel.app/staffingRequests/delete";
     pageData.heading = "Staffing Request Admin";
     pageData.subHeading =
       "Here is a list of all the staffing requests you  have  so far";
