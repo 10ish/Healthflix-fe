@@ -31,10 +31,7 @@ function handleLogout() {
 
     Object.keys(cookies).forEach((cookieName) => {
       if (cookieName === 'token') {
-        Cookies.remove(cookieName, {
-          path: '/applicants', // Adjust the path if needed
-    
-        });
+        Cookies.remove(cookieName);
       }
     });
 
