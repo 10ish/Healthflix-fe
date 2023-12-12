@@ -16,7 +16,7 @@ function AdminNavigation() {
       .get("https://healthflix-be.vercel.app/admin/logout")
       .then((res) => {
         if(res.status===200){
-          Cookies.remove('adminToken')
+          Cookies.remove('adminToken',{path:'/'})
           setAdminIsLoggedIn(false)
           navigate("/admin");
         }
