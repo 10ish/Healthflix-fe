@@ -7,6 +7,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../../Context/AuthContext/AuthContext";
+import Cookies from 'Cookie-js'
 function AdminNavigation() {
   const {setAdminIsLoggedIn} = useContext(AuthContext)
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ function AdminNavigation() {
       .get("https://healthflix-be.vercel.app/admin/logout")
       .then((res) => {
         if(res.status===200){
+          Cookies.remove('adminToken')
           setAdminIsLoggedIn(false)
           navigate("/admin");
         }
