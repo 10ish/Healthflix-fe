@@ -19,7 +19,7 @@ function AdminNavigation() {
           console.log(Cookies.get('adminToken'));
           Cookies.remove('adminToken')
           setAdminIsLoggedIn(false)
-          // navigate("/admin");
+          navigate("/admin");
         }
        
          
