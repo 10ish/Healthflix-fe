@@ -6,6 +6,7 @@ import axios from "axios";
 import { useContext } from "react";
 import { AuthContext } from "../../../Context/AuthContext/AuthContext";
 import { useNavigate } from "react-router-dom";
+import Cookies form 'js-cookie';
 function UserNavigation() {
   const { setUserIsLoggedIn} = useContext(AuthContext)
   const navigate = useNavigate()
@@ -25,6 +26,7 @@ function UserNavigation() {
   }, [userNavItemKey]);
 
   const handleLogout = () => {
+    Cookies.delete('token')
     axios
       .get("https://healthflix-be.vercel.app/applicants/logout")
       .then((res) => {console.log(res)
