@@ -38,7 +38,7 @@ export default function Login({ type }) {
         }
         else{
           setUserIsLoggedIn(true);
-    Cookies.set('token', res.data.token,{path:'/'})
+    // Cookies.set('token', res.data.token,{path:'/'})
           navigate("/user");
           
         }
