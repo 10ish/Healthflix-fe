@@ -31,14 +31,14 @@ export default function Login({ type }) {
       
       if (res.request.status === 200) {
         if(type==='admin'){
-          Cookies.set('adminToken', res.data.token)
+          Cookies.set('adminToken', res.data.token,{path:'/'})
           setAdminIsLoggedIn(true);
       
           navigate("/admin/home");
         }
         else{
           setUserIsLoggedIn(true);
-    Cookies.set('token', res.data.token)
+    Cookies.set('token', res.data.token,{path:'/'})
           navigate("/user");
           
         }
