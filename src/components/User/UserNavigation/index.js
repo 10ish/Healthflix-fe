@@ -25,16 +25,20 @@ function UserNavigation() {
     localStorage.setItem("userNavItemKey", userNavItemKey);
   }, [userNavItemKey]);
 
-  const handleLogout = () => {
-    Cookies.delete('token')
-    axios
-      .get("https://healthflix-be.vercel.app/applicants/logout")
-      .then((res) => {console.log(res)
-        setUserIsLoggedIn(false)
-        localStorage.setItem("userNavItemKey", 'home');
-      navigate('/')
-      })
-      .catch((err) => console.log(err));
+function handleLogout() {
+  const clearTokenCookies = () => {
+    const cookies = Cookies.get(); // Get all cookies
+
+    Object.keys(cookies).forEach((cookieName) => {
+      if (cookieName === 'token') {
+        Cookies.remove(cookieName, {
+          path: '/applicants', // Adjust the path if needed
+    
+        });
+      }
+    });
+
+    // Optionally, perform any additional actions after deleting cookies
   };
   return (
     <Nav
