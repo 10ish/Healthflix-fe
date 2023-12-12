@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useContext } from "react";
 import { AuthContext } from "../../../Context/AuthContext/AuthContext";
-
+import Cookies from 'js-cookie'
 export default function Login({ type }) {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
@@ -31,13 +31,14 @@ export default function Login({ type }) {
       
       if (res.request.status === 200) {
         if(type==='admin'){
+          Cookies.set('adminToken', res.data.token)
           setAdminIsLoggedIn(true);
       
           navigate("/admin/home");
         }
         else{
           setUserIsLoggedIn(true);
-   
+    Cookies.set('token', res.data.token)
           navigate("/user");
           
         }
