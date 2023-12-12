@@ -30,6 +30,7 @@ function UserNavigation() {
     axios
       .get("https://healthflix-be.vercel.app/applicants/logout")
       .then((res) => {console.log(res)
+       Cookies.remove('token')
         setUserIsLoggedIn(false)
         localStorage.setItem("userNavItemKey", 'home');
       navigate('/')
