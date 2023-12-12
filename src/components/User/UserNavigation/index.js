@@ -6,7 +6,7 @@ import axios from "axios";
 import { useContext } from "react";
 import { AuthContext } from "../../../Context/AuthContext/AuthContext";
 import { useNavigate } from "react-router-dom";
-import Cookies form 'js-cookie';
+import Cookies from 'js-cookie';
 function UserNavigation() {
   const { setUserIsLoggedIn} = useContext(AuthContext)
   const navigate = useNavigate()
