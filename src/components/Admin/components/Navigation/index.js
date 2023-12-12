@@ -7,7 +7,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../../Context/AuthContext/AuthContext";
-import Cookies from 'cookie-js'
+import Cookies from 'js-cookie'
 function AdminNavigation() {
   const {setAdminIsLoggedIn} = useContext(AuthContext)
   const navigate = useNavigate();
